@@ -154,3 +154,60 @@
 // console.log(typeof address);
 // console.log(today);
 // console.log(typeof today);
+
+// ================================================================================== //
+
+// NUMBER TO STRING August 16 2019
+
+// ================================================================================== //
+
+// let val;
+
+// // Number to String
+// val = String(555);
+// val = String(4+4);
+
+// // Boolean to String
+// val = String(true);
+
+// // Date to String
+// val = String(new Date());
+
+// // Array to String
+// val = String([1,2,3,4]);
+
+// // toString()
+// val = (5).toString();
+// val = (true).toString();
+
+// // String to numbers
+// val = Number('5'); // returns 5 number 5
+// val = Number(true); // returns 1 number 1
+// val = Number(false); // return 0 number 0
+// val = Number(null); // returns 0 number 0
+// val = Number('hello'); // returns NaN number NaN
+// val = Number([1,2,3]); // returns NaN number NaN
+
+// val = parseInt('100.30'); // returns as integer
+// val = parseFloat('100.30'); // returns a float
+
+
+// // Output
+// // console.log(val);
+// // console.log(typeof val);
+// // console.log(val.length);
+// // console.log(val.toFixed(2));
+
+// const val1 = String(5);
+// const val2 = 6;
+// const sum = Number(val1 + val2);
+
+// console.log(sum);
+// console.log(typeof sum);
+
+// ================================================================================== //
+
+// NUMBERS AND MATH OBJECT August 16 2019
+
+// ================================================================================== //
+
