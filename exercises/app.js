@@ -79,7 +79,7 @@
 
 // ================================================================================== //
 
-// CONST EXERCISE August 16 2019
+// CONST EXERCISE WITH OBJECTS AND ARRAYS August 16 2019
 
 // ================================================================================== //
 
@@ -90,19 +90,67 @@
 // Const has to have a value assigned to it
 // const greeting;
 
-const person = {
-  name: 'John',
-  age: 30
-}
+// const person = {
+//   name: 'John',
+//   age: 30
+// }
 
-console.log(person);
+// console.log(person);
 
-person.name = 'Sara'; // You can reassigned the value of name and age, but not const person.
-person.age = '25';
+// person.name = 'Sara'; // You can reassigned the value of name and age, but not const person.
+// person.age = '25';
 
-console.log(person);
+// console.log(person);
 
-const numbers = [1, 2, 3, 4, 5];
-numbers.push(6);
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.push(6);
 
-console.log(numbers);
+// console.log(numbers);
+
+// ================================================================================== //
+
+// PRIMITIVE VALUES August 16 2019
+
+// ================================================================================== //
+
+// // STRING
+// const name = "John Doe";
+// // NUMBER
+// const age = 45;
+// // BOOLEAN
+// const hasKids = true;
+// // NULL
+// const car = null;
+// // UNDEFINED
+// let test;
+// // SYMBOL 
+// const sym = Symbol();
+
+// console.log(typeof(name));
+// console.log(typeof age);
+// console.log(typeof(hasKids));
+// console.log(typeof car);
+// console.log(typeof(test));
+// console.log(typeof sym);
+
+// ================================================================================== //
+
+// REFERENCES OBJECTS August 16 2019
+
+// ================================================================================== //
+
+// // ARRAY
+// const hobbies = ['movies', 'music'];
+// // OBJECT LITERAL
+// const address = {
+//   city: 'Boston',
+//   state: 'MA'
+// }
+
+// // DATES
+// const today = new Date();
+
+// console.log(typeof(hobbies));
+// console.log(typeof address);
+// console.log(today);
+// console.log(typeof today);
