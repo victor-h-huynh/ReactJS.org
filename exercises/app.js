@@ -245,67 +245,109 @@
 
 // ================================================================================== //
 
-const firstName = 'William';
-const lastName = 'Johnson';
+// const firstName = 'William';
+// const lastName = 'Johnson';
+// const age = 26;
+// const str = 'Hello there, my name is Victor';
+// const tags = 'web design,web development,programming';
+
+// let val;
+
+// val = firstName + lastName;
+
+// // Concatenation
+
+// val = firstName + ' ' + lastName;
+
+// // Append
+// val = 'Victor ';
+// val += 'Huynh';
+
+// val = 'Hello, my name is ' + firstName + ' and I am  ' + age;
+
+// // Escaping
+// val = 'That\'s awesome, I can\'t wait';
+
+// // Length property
+// val = firstName.length;
+
+// // concat() method
+// val = firstName.concat(' ', lastName);
+
+// // toUpperCase() and toLowerCase() methods
+// val = firstName.toUpperCase();
+// val = firstName.toLowerCase();
+
+// val = firstName[2];
+
+// // indexOf() method
+
+// val = firstName.indexOf('l');
+// val = firstName.lastIndexOf('l');
+
+// // charAt() method
+// val = firstName.charAt('2');
+
+// // Get last char
+// val = firstName.charAt(firstName.length - 1);
+
+// // substring()
+// val = firstName.substring(0, 4);
+
+// // slice()
+// val = firstName.slice(0, 4);
+// val = firstName.slice(-3);
+
+// // split() splits at ','
+// val = str.split(' '); // Splits at every ' '
+// val = tags.split(','); // Splits at every ','
+
+// // replace() replaces character with second value
+// val = str.replace('Victor', 'Anna');
+
+// // includes() returns true or false within a string
+// val = str.includes('foo')
+
+// console.log(val);
+
+// ================================================================================== //
+
+// TEMPLATE LITERALS August 16 2019
+
+// ================================================================================== //
+
+const name = 'Victor';
 const age = 26;
-const str = 'Hello there, my name is Victor';
-const tags = 'web design,web development,programming';
+const job = 'Web Developer';
+const city = 'Montreal';
+let html;
 
-let val;
+// Without template strings (es5)
 
-val = firstName + lastName;
+html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City:' + city + '</li>'; 
 
-// Concatenation
+html = '<ul>' +
+        '<li>Name: ' + name + '</li>' +
+        '<li>Age: ' + age + '</li>' +
+        '<li>Job: ' + job + '</li>' +
+        '<li>City: ' + city + '</li>' +
+       '</ul>'
 
-val = firstName + ' ' + lastName;
+function hello() {
+  return 'hello';
+}
 
-// Append
-val = 'Victor ';
-val += 'Huynh';
+// With template strings (es6)
+html = `
+    <ul>
+      <li>Name: ${name}</li>
+      <li>Age: ${age}</li>
+      <li>Job: ${job}</li>
+      <li>City: ${city}</li>
+      <li>${4 + 4}</li>
+      <li>${hello()}</li>
+      <li>${age < 25 ? 'Under 25' : 'Over 25'}</li>
+    </ul>
+`
 
-val = 'Hello, my name is ' + firstName + ' and I am  ' + age;
-
-// Escaping
-val = 'That\'s awesome, I can\'t wait';
-
-// Length property
-val = firstName.length;
-
-// concat() method
-val = firstName.concat(' ', lastName);
-
-// toUpperCase() and toLowerCase() methods
-val = firstName.toUpperCase();
-val = firstName.toLowerCase();
-
-val = firstName[2];
-
-// indexOf() method
-
-val = firstName.indexOf('l');
-val = firstName.lastIndexOf('l');
-
-// charAt() method
-val = firstName.charAt('2');
-
-// Get last char
-val = firstName.charAt(firstName.length - 1);
-
-// substring()
-val = firstName.substring(0, 4);
-
-// slice()
-val = firstName.slice(0, 4);
-val = firstName.slice(-3);
-
-// split() splits at ','
-val = str.split(' '); // Splits at every ' '
-val = tags.split(','); // Splits at every ','
-
-// replace() replaces character with second value
-val = str.replace('Victor', 'Anna');
-
-// includes() returns true or false within a string
-val = str.includes('foo')
-
-console.log(val);
+document.body.innerHTML = html;
