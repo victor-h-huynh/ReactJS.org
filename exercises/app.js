@@ -211,30 +211,101 @@
 
 // ================================================================================== //
 
-const num1 = 100;
-const num2 = 60;
-let val; 
+// const num1 = 100;
+// const num2 = 60;
+// let val; 
 
-// Simple math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
+// // Simple math with numbers
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
 
-// Math Object
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.4);
-val = Math.ceil(2.4);
-val = Math.floor(2.8);
-val = Math.sqrt(64);
-val = Math.abs(-3);
-val = Math.pow(8, 2);
-val = Math.min(2,33,4,1,55,6,3,-2);
-val = Math.max(2,33,4,1,55,6,3,-2);
-val = Math.random();
+// // Math Object
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.4);
+// val = Math.ceil(2.4);
+// val = Math.floor(2.8);
+// val = Math.sqrt(64);
+// val = Math.abs(-3);
+// val = Math.pow(8, 2);
+// val = Math.min(2,33,4,1,55,6,3,-2);
+// val = Math.max(2,33,4,1,55,6,3,-2);
+// val = Math.random();
 
-val = Math.floor(Math.random() * 20 + 1);
+// val = Math.floor(Math.random() * 20 + 1);
+
+// console.log(val);
+
+// ================================================================================== //
+
+// STRING METHODS, CONCATENATION, APPEND, ESCAPING, LENGTH, CONCAT, TOLOWERCASE TOUPPERCASE, INDEXOF, CHARAT, SUBSTRING, SLICE, SPLIT, INCLUDES, REPLACE  August 16 2019
+
+// ================================================================================== //
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 26;
+const str = 'Hello there, my name is Victor';
+const tags = 'web design,web development,programming';
+
+let val;
+
+val = firstName + lastName;
+
+// Concatenation
+
+val = firstName + ' ' + lastName;
+
+// Append
+val = 'Victor ';
+val += 'Huynh';
+
+val = 'Hello, my name is ' + firstName + ' and I am  ' + age;
+
+// Escaping
+val = 'That\'s awesome, I can\'t wait';
+
+// Length property
+val = firstName.length;
+
+// concat() method
+val = firstName.concat(' ', lastName);
+
+// toUpperCase() and toLowerCase() methods
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+
+val = firstName[2];
+
+// indexOf() method
+
+val = firstName.indexOf('l');
+val = firstName.lastIndexOf('l');
+
+// charAt() method
+val = firstName.charAt('2');
+
+// Get last char
+val = firstName.charAt(firstName.length - 1);
+
+// substring()
+val = firstName.substring(0, 4);
+
+// slice()
+val = firstName.slice(0, 4);
+val = firstName.slice(-3);
+
+// split() splits at ','
+val = str.split(' '); // Splits at every ' '
+val = tags.split(','); // Splits at every ','
+
+// replace() replaces character with second value
+val = str.replace('Victor', 'Anna');
+
+// includes() returns true or false within a string
+val = str.includes('foo')
 
 console.log(val);
