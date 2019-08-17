@@ -659,18 +659,18 @@
 
 // Function Declarations
 
-function greet(firstName = 'Steve', lastName = 'Smith') {
-  // console.log('Hello');
-  return 'Hello ' + firstName + ' ' + lastName;
-}
+// function greet(firstName = 'Steve', lastName = 'Smith') {
+//   // console.log('Hello');
+//   return 'Hello ' + firstName + ' ' + lastName;
+// }
 
 // console.log(greet('John', 'Doe'));
 
 // Function Expressions
 
-const square = function(x = 3) {
-  return x*x
-};
+// const square = function(x = 3) {
+//   return x*x
+// };
 
 // console.log(square(8));
 
@@ -686,19 +686,19 @@ const square = function(x = 3) {
 
 // Property Methods
 
-const todo = {
-  add: function() {
-    console.log('Add todo..')
-  },
-  edit: function(id){
-    console.log(`Edit to do ${id}`)
-  }
-}
+// const todo = {
+//   add: function() {
+//     console.log('Add todo..')
+//   },
+//   edit: function(id){
+//     console.log(`Edit to do ${id}`)
+//   }
+// }
 
-todo.delete = function() {
-  console.log('Delete todo...')
-}
+// todo.delete = function() {
+//   console.log('Delete todo...')
+// }
 
-todo.add();
-todo.edit(22);
-todo.delete();
+// todo.add();
+// todo.edit(22);
+// todo.delete();
