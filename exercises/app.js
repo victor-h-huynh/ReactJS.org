@@ -606,47 +606,99 @@
 
 // ================================================================================== //
 
-const color = 'red';
+// const color = 'red';
 
-switch(color) {
-  case 'red':
-    console.log('Color is red');
-    break;
-  case 'blue':
-    console.log('Color is blue');
-    break;
-  default:
-    console.log('Color is not red or blue');
-    break;
+// switch(color) {
+//   case 'red':
+//     console.log('Color is red');
+//     break;
+//   case 'blue':
+//     console.log('Color is blue');
+//     break;
+//   default:
+//     console.log('Color is not red or blue');
+//     break;
+// }
+
+// let day;
+
+// switch(new Date().getDay()) {
+//   case 0:
+//     day = 'Sunday';
+//     break;
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//     break;
+//   case 3:
+//     day = 'Wednesday';
+//     break;
+//   case 4:
+//     day = 'Thursday';
+//     break;
+//   case 5:
+//     day = 'Friday';
+//     break;
+//   case 6:
+//     day = 'Saturday';
+//     break;
+//   default:
+//     console.log('Not a valid date');
+//     break;
+// }
+
+// console.log(`Today is ${day}`);
+
+// ================================================================================== //
+
+// FUNCTIONS August 17 2019
+
+// ================================================================================== //
+
+// Function Declarations
+
+function greet(firstName = 'Steve', lastName = 'Smith') {
+  // console.log('Hello');
+  return 'Hello ' + firstName + ' ' + lastName;
 }
 
-let day;
+// console.log(greet('John', 'Doe'));
 
-switch(new Date().getDay()) {
-  case 0:
-    day = 'Sunday';
-    break;
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-    day = 'Tuesday';
-    break;
-  case 3:
-    day = 'Wednesday';
-    break;
-  case 4:
-    day = 'Thursday';
-    break;
-  case 5:
-    day = 'Friday';
-    break;
-  case 6:
-    day = 'Saturday';
-    break;
-  default:
-    console.log('Not a valid date');
-    break;
+// Function Expressions
+
+const square = function(x = 3) {
+  return x*x
+};
+
+// console.log(square(8));
+
+// Immediately Invokable Function Expressions - IIFEs
+
+// (function(){
+//   console.log('IIFE test');
+// })();
+
+// (function(name){
+//   console.log('Hello ' + name)
+// })('Victor');
+
+// Property Methods
+
+const todo = {
+  add: function() {
+    console.log('Add todo..')
+  },
+  edit: function(id){
+    console.log(`Edit to do ${id}`)
+  }
 }
 
-console.log(`Today is ${day}`);
+todo.delete = function() {
+  console.log('Delete todo...')
+}
+
+todo.add();
+todo.edit(22);
+todo.delete();
