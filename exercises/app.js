@@ -316,38 +316,113 @@
 
 // ================================================================================== //
 
-const name = 'Victor';
-const age = 26;
-const job = 'Web Developer';
-const city = 'Montreal';
-let html;
+// const name = 'Victor';
+// const age = 26;
+// const job = 'Web Developer';
+// const city = 'Montreal';
+// let html;
 
-// Without template strings (es5)
+// // Without template strings (es5)
 
-html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City:' + city + '</li>'; 
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>City:' + city + '</li>'; 
 
-html = '<ul>' +
-        '<li>Name: ' + name + '</li>' +
-        '<li>Age: ' + age + '</li>' +
-        '<li>Job: ' + job + '</li>' +
-        '<li>City: ' + city + '</li>' +
-       '</ul>'
+// html = '<ul>' +
+//         '<li>Name: ' + name + '</li>' +
+//         '<li>Age: ' + age + '</li>' +
+//         '<li>Job: ' + job + '</li>' +
+//         '<li>City: ' + city + '</li>' +
+//        '</ul>'
 
-function hello() {
-  return 'hello';
-}
+// function hello() {
+//   return 'hello';
+// }
 
-// With template strings (es6)
-html = `
-    <ul>
-      <li>Name: ${name}</li>
-      <li>Age: ${age}</li>
-      <li>Job: ${job}</li>
-      <li>City: ${city}</li>
-      <li>${4 + 4}</li>
-      <li>${hello()}</li>
-      <li>${age < 25 ? 'Under 25' : 'Over 25'}</li>
-    </ul>
-`
+// // With template strings (es6)
+// html = `
+//     <ul>
+//       <li>Name: ${name}</li>
+//       <li>Age: ${age}</li>
+//       <li>Job: ${job}</li>
+//       <li>City: ${city}</li>
+//       <li>${4 + 4}</li>
+//       <li>${hello()}</li>
+//       <li>${age < 25 ? 'Under 25' : 'Over 25'}</li>
+//     </ul>
+// `
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
+
+// ================================================================================== //
+
+// ARRAYS AND MUTATING August 16 2019
+
+// ================================================================================== //
+
+// Creating Arrays
+const numbers = [43,56,33,23,44,36,5];
+const numbers2 = new Array(22,45,33,76,54);
+const fruit = ['Apple', 'Banana', 'Orange', 'Pear'];
+const mixed = [22, 'Hello', true, undefined, null, {a:1, b:2}, new Date()];
+
+let val;
+
+// Get array length
+val = numbers.length;
+
+// Check if is Array
+val = Array.isArray(numbers);
+
+// Get single value
+val = numbers[3];
+val = numbers[0];
+// Insert into array
+numbers[2] = 100;
+// Find index of value
+val = numbers.indexOf(36);
+
+// MUTATING ARRAYS
+
+// // Add to end of array
+// numbers.push(250);
+
+// // Add to front of array
+// numbers.unshift(120);
+
+// // Remove from end of array
+// numbers.pop();
+
+// // Remove from front of array
+// numbers.shift();
+
+// // Slice values
+// numbers.splice(1,3);
+
+// // Reverse
+// numbers.reverse();
+
+// Concatenate arrays
+val = numbers.concat(numbers2);
+
+// Sorting arrays
+val = fruit.sort();
+// val = numbers.sort();
+
+// // Use the "compare function"
+// val = numbers.sort(function (x, y){
+//   return x - y;
+// })
+
+// // Reverse sort
+// val = numbers.sort(function (x, y){
+//   return y - x;
+// })
+
+// // Find
+// function over50(num) {
+//   return num > 50;
+// }
+
+// val = numbers.find(over50);
+
+// console.log(numbers);
+// console.log(val);
