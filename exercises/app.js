@@ -746,8 +746,8 @@
 // while(i < 10);
 
 // Loop through array
-const fruits = ['Apple', 'Orange', 'Banana', 'Pears', 'Durian'];
-let count = 0;
+// const fruits = ['Apple', 'Orange', 'Banana', 'Pears', 'Durian'];
+// let count = 0;
 
 // for(let i = 0; i < cars.length; i++) {
 //   console.log(cars[i]);
@@ -782,12 +782,77 @@ let count = 0;
 
 // FOR IN LOOP
 
-const user = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 40
-}
+// const user = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 40
+// }
 
-for (let x in user) {
-  console.log(x + " : " + user[x]);
-}
+// for (let x in user) {
+//   console.log(x + " : " + user[x]);
+// }
+
+// ================================================================================== //
+
+// WINDOW METHODS/ OBJECTS / PROPERTIES August 20 2019
+
+// ================================================================================== //
+
+// Alert
+
+// window.alert('Hello World');
+
+// Prompt
+// const input = prompt();
+// alert(input);
+
+// Confirm
+// if (confirm('Are you sure')) {
+//   console.log('Yes');
+// } else {
+//   console.log('No');
+// }
+
+let val;
+const array = ['Apple', 'Blue', 'Cup'];
+
+// OUTER HEIGHT AND WIDTH
+val = window.outerHeight;
+val = window.outerWidth;
+
+// INNER HEIGHT AND WIDTH
+val = window.innerHeight;
+val = window.innerWidth;
+
+// SCROLL POINTS
+val = window.scrollY;
+val = window.scrollX;
+
+// LOCATION OBJECT
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+
+// REDIRECT
+// window.location.href = 'http://google.ca';
+
+// RELOAD
+// window.location.reload();
+
+// HISTORY OBJECT
+
+// window.history.go(-2);
+
+// val = window.history.length;
+
+// NAVIGATOR OBJECT
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
+
+console.log(val);
