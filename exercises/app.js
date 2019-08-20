@@ -708,3 +708,86 @@
 // LOOPS AND INTERATIONS August 20 2019
 
 // ================================================================================== //
+
+// For loop
+
+// for(let i = 0; i < 10; i++) {
+//   // console.log('Number ' + i);
+//   if(i == 2) {
+//     console.log('2 is my favourite number');
+//     continue;
+//   }
+//   if(i === 5) {
+//     console.log('Stop the loop');
+//     break;
+//   }
+
+//   console.log('Number ' + i);
+// }
+
+// While loop
+
+// let i = 0;
+
+// while(i < 10) {
+//   console.log('Number ' + i)
+//   i++;
+// }
+
+// DO WHILE
+
+// let i = 0;
+
+// do {
+//   console.log('Number ' + i);
+//   i++
+// }
+
+// while(i < 10);
+
+// Loop through array
+const fruits = ['Apple', 'Orange', 'Banana', 'Pears', 'Durian'];
+let count = 0;
+
+// for(let i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+
+
+// FOR EACH 
+// fruits.forEach(function(fruit, index, array){
+//   console.log(`${index} : ${fruit}`);
+//   console.log(array);
+// })
+
+// MAP
+
+// const colors = [
+//   {id: 1, color: "red"},
+//   {id: 2, color: "blue"},
+//   {id: 3, color: "green"},
+//   {id: 4, color: "yellow"}
+// ]
+
+// const ids = colors.map(function(element){
+//   return element.id;
+// })
+
+// const color = colors.map(function(element){
+//   return element.color;
+// })
+
+// console.log(ids);
+// console.log(color);
+
+// FOR IN LOOP
+
+const user = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 40
+}
+
+for (let x in user) {
+  console.log(x + " : " + user[x]);
+}
